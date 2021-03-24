@@ -1,0 +1,1 @@
+command: lshw -c memory | grep size | awk '{print $2}'

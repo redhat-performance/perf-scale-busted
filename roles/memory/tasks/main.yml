@@ -1,0 +1,8 @@
+- name: Get memory info
+  shell: |
+    {{ command }}
+  register: memory_detail
+
+- name: Set memory_size
+  set_fact:
+    memory_size: "{{ memory_detail }}"
